@@ -13,3 +13,9 @@ target_sources(IMGUI
         ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
         ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
 )
+
+target_include_directories( IMGUI
+                            PUBLIC ${IMGUI_DIR}
+                            PUBLIC ${IMGUI_DIR}/backends
+                            PUBLIC ${SDL3_DIR}/include
+                            )
